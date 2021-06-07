@@ -14,5 +14,3 @@ You will have a specific time to type each word, and if you can type the word sh
  - Difficulty panel show and hide button
  - Awesome UI
 
- # Live Demo
- [Typing-Game-JS (click to see live demo)](https://mehedilslamripon.github.io/Typing-Game-JS/ "Typing-Game-JS (live demo)")
