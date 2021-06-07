@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reaction-timer Intro</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            text-align: center;
+            font-size: 25px;
+            background-image: url(./abstract\ Image.jpg);
+            background-size: cover;
+            background-blend-mode: lighten;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            /* object-fit: cover; */
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            margin: 0 auto;
+            background-image: url(./abstract\ Image.jpg);
+            background-color: rgba(255, 255, 255, 0.1);
+            background-blend-mode: lighten;
+            box-shadow: 40px 20px 20px black;
+            padding: 2.5rem;
+        }
+
+        a#play_game {
+            text-decoration: none;
+            display: inline;
+            border: 3px solid black;
+            padding: 20px;
+            font-weight: bold;
+            color: black;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            border-radius: 10px;
+            box-shadow: 10px 5px 5px black;
+        }
+
+        a#play_game:hover {
+            background-color: #043e46;
+            color: white;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 style="margin-bottom: 2rem;">Test Your Reactions!</h1>
+        <h2 style="margin-bottom: 2rem;">Click On The Boxes And Circles As Quickly As You Can! </h2>
+        <h2 style="margin-bottom: 2rem;">Your best time and the current time is displayed before</h2>
+        <article style="display: flex; justify-content: space-between; width: 20vw;">
+            <a id="play_game" href="main.html">Play Game!</a>
+            <a id="play_game" href="rapidRound.html">Rapid Round</a>
+        </article>
+
+    </div>
+
+</body>
+
+</html>

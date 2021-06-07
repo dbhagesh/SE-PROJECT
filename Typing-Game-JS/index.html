@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Typing Game V2</title>
+
+</head>
+
+<body>
+    <button id="settings-btn" class="settings-btn">
+        ⚙️
+    </button>
+
+    <div id="settings" class="settings">
+        <form id="settings-form">
+            <div>
+                <label for="difficulty">Difficulty</label>
+                <select id="difficulty">
+                    <option value="easy">Noob</option>
+                    <option value="medium">Rookie</option>
+                    <option value="hard">Expert</option>
+                </select>
+            </div>
+        </form>
+    </div>
+    
+    <h2>👩‍💻 Typing Game 👨‍💻</h2>
+    <div class="container">
+        
+        <div id="startbtnbg" class="startbtnbg">
+            <h1>Start Game</h1>
+            <h3>This is a word typing game. Enter the word's shown to you to score accordingly. Press ready to start the Game.</h3>
+            <button id="start-game" class="start-game">Ready</button>
+        </div>
+        
+        <h1 id="word">fds</h1>
+        <div id="type">Type the following:</div>
+
+        <input type="text" id="text" autocomplete="off" placeholder="Type the word here..." />
+
+        <p class="time-container">Time left: <span id="time">10s</span></p>
+
+        <p class="score-container">Score: <span id="score">0</span></p>
+
+        <div id="end-game-container" class="end-game-container"></div>
+    </div>
+    <h2>HIGH SCORE</h2>
+    <div id="highscore" class="highscore">
+        <h1>First : </h1>
+        <h1>Second :</h1>
+        <h1>Third : </h1>
+        
+    </div>
+    
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

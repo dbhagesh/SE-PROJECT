@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dad Jokes</title>
+    <style>
+      body {
+  background-color: #fff;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 20px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.container {
+  background-color: #87CEEB;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  padding: 50px 20px;
+  text-align: center;
+  max-width: 100%;
+  width: 800px;
+}
+
+h3 {
+  margin: 0;
+  opacity: 0.5;
+  letter-spacing: 2px;
+}
+
+.joke {
+  font-size: 40px;
+  font-family: "Impact,Charcoal,sans-serif";
+  letter-spacing: 1px;
+  line-height: 40px;
+  margin: 50px auto;
+  max-width: 600px;
+  color: #DC143C
+}
+
+.btn {
+  background-color: #9f68e0;
+  color: #fff;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  padding: 14px 40px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:focus {
+  outline: 0;
+}
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+      <h3 class="joke">Don't Laugh Challenge</h3>
+      <div id="joke" class="joke">// Joke goes here</div>
+      <p style="font-size:50px">&#128514;&#128514;&#128514;</p>
+      <button id="jokeBtn" class="btn">Get Another Joke</button>
+      <button class="btn" onclick="copy()"> Copy </button>
+      <button class="btn" onclick="myFunction()">Toggle mode</button
+    </div>
+    <script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+// function copyf()
+// {
+//   var xyz="";
+//   var msg=document.getElementById("joke");
+//   msg.focus();
+//   console.log(msg.innerHTML.length);
+//   //msg.setSelectionRange(0,msg.innerHTML.length);
+//  xyz= document.execCommand("copy");
+//   console.log(msg);
+// }
+function copy() {
+    var text=document.getElementById("joke").innerHTML;
+    var input = document.createElement('input');
+    input.setAttribute('value', text);
+    document.body.appendChild(input);
+    input.select();
+    var result = document.execCommand('copy');
+    document.body.removeChild(input);
+    alert("joke copied");
+    return result;
+ }
+</script>
+    <script src="script.js"></script><br><br>
+    <iframe src="silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+<audio id="player" autoplay loop controls>
+    <source src="baby.mp3" type="audio/mp3">
+</audio>
+<script>
+  document.getElementById('player').play();
+  </script>
+<!-- <audio controls autoplay>
+  <source src="baby.mp3" type="audio/mpeg">
+</audio> -->
+  </body>
+</html>

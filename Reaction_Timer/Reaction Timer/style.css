@@ -1,0 +1,35 @@
+#shape {
+
+    width:200px;
+    height:200px;
+    background-color: green;
+    border: 1px solid rgba(0, 12, 11, 0.856);
+    display: none;
+    position: relative;
+}
+.bold {
+    font-weight: bold;
+    font-size: xx-large;
+    color:gray;
+    display: inline;
+
+}
+.buttons {
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+}
+button {
+    text-align: center; 
+    background-color: #0a7f8f;
+    font-weight: bold;
+    font-size: xx-large;
+    width: 250px; 
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px black;
+    border:none;
+}
+#exit {
+    margin-left: 1rem;
+}

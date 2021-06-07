@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="contain">
+
+    <div class="left">
+        <div class = "flex">
+          <div class='game'> </div>
+          <i class="refresh-icon" onclick="tic_tac_toe.reset_board()"> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5 20l-1.359-2.038c-1.061.653-2.305 1.038-3.641 1.038-3.859 0-7-3.14-7-7h2c0 2.757 2.243 5 5 5 .927 0 1.786-.264 2.527-.708l-1.527-2.292h5.719l-1.719 6zm0-8c0-2.757-2.243-5-5-5-.927 0-1.786.264-2.527.708l1.527 2.292h-5.719l1.719-6 1.359 2.038c1.061-.653 2.305-1.038 3.641-1.038 3.859 0 7 3.14 7 7h-2z"/></svg> </i>
+        </div>
+        <div>
+            <!-- <button class="btn" >Reset board</button>  -->
+            <button class="btn" onclick="tic_tac_toe.restart_round()" >Reset Round</button> 
+            <button class="btn" onclick="tic_tac_toe.restart_game()" >Restart Game</button> 
+        </div>
+    </div>
+    
+    <div class="right">
+        <h1 class = "winn"> O Turn </h1>
+        <div class="container">
+            <div class="table-3">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Round</th>
+                    <th>O</th>
+                    <th>X</th>
+                    <th>Draw</th>
+                    <th>Winner</th>
+                  </tr>
+                </thead>
+                <tbody id = "table">
+                </tbody>
+              </table>
+            </div>
+          </div>
+    </div>
+
+    <script src="js/tic-tac-toe.js"></script>
+    <script>
+        tic_tac_toe.init( document.querySelector('.game'),  document.querySelector('#table'));
+        tic_tac_toe.start();
+    </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url("./bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  margin-top: 15vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.highscore {
+  display: flex;
+  flex-direction: column;
+  background-color: darkorange;
+  color: white;
+  height: 25vh;
+  width: 50vw;
+  z-index: 20;
+  padding-top: 5vh;
+  align-items: center;
+}
+
+.startbtnbg {
+  border: 4px solid red;
+
+  position: absolute;
+  background: #eecda3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ef629f,
+    #eecda3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ef629f,
+    #eecda3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  height: inherit;
+  width: inherit;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+.startbtnbg h1 {
+  position: absolute;
+  top: 4vh;
+  left: 30%;
+  color: gold;
+}
+.startbtnbg h3 {
+  position: absolute;
+
+  top: 10vh;
+
+  color: white;
+}
+.startbtnbg .start-game {
+  position: absolute;
+  background-color: gold;
+  color: white;
+  font-size: larger;
+  bottom: 10vh;
+  left: 42%;
+}
+
+button {
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+  padding: 5px 15px;
+}
+
+select {
+  width: 200px;
+  padding: 5px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  background-color: #a7c5e3;
+}
+
+select:focus,
+button:focus {
+  outline: 0;
+}
+
+.settings-btn {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  background: #a7c5e3;
+}
+
+.settings {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 70px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.settings.hide {
+  transform: translateY(-100%);
+}
+
+.container {
+  margin-top: 10vh;
+  background-color: #34495e;
+  height: 50vh;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  position: relative;
+  text-align: center;
+  width: 500px;
+  margin-bottom: 10vh;
+}
+
+h2 {
+  font-family: "Major Mono Display", monospace;
+  color: white;
+  font-style: bold;
+  font-weight: 700;
+  font-size: 4rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 8px;
+  border-radius: 4px;
+  margin: 0 0 40px;
+}
+#word {
+  position: absolute;
+  left: 42%;
+  bottom: 55%;
+  color: red;
+}
+#type {
+  position: absolute;
+  bottom: 70%;
+  left: 35%;
+}
+h1 {
+  margin: 0;
+}
+
+input {
+  border: 0;
+  border-radius: 4px;
+  font-size: 20px;
+  width: 300px;
+  padding: 15px 23px;
+  margin-top: 30%;
+  /* //background: #a7c5e3; */
+  font-weight: 600;
+  color: royalblue;
+}
+
+.score-container {
+  position: absolute;
+  top: 10px;
+  left: 43%;
+}
+
+.time-container {
+  position: absolute;
+  bottom: 10px;
+  left: 40%;
+}
+
+.end-game-container {
+  background-color: inherit;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
